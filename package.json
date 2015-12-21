@@ -1,0 +1,63 @@
+{
+  "name": "course-check",
+  "productName": "CourseCheck",
+  "version": "0.1.0",
+  "description": "My laudable app",
+  "license": "MIT",
+  "repository": "collectively-made/course-check",
+  "author": {
+    "name": "Collectively Made",
+    "email": "collectivelymade@gmail.com",
+    "url": "collectivelymade.com"
+  },
+  "electronVersion": "0.36.0",
+  "scripts": {
+    "test": "xo",
+    "start": "electron .",
+    "build": "electron-packager . $npm_package_productName --out=dist --ignore='^/dist$' --prune --asar --all --version=$npm_package_electronVersion"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "dependencies": {
+    "electron-debug": "^0.5.0",
+    "grunt": "^0.4.5",
+    "grunt-bump": "^0.7.0",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-karma": "^0.12.1",
+    "grunt-ng-annotate": "^1.0.1",
+    "grunt-wiredep": "^2.0.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.15",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "load-grunt-tasks": "^3.4.0",
+    "phantomjs": "^1.9.19",
+    "time-grunt": "^1.2.2"
+  },
+  "devDependencies": {
+    "electron-packager": "^5.0.0",
+    "electron-prebuilt": "^0.36.0",
+    "xo": "^0.12.0"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  },
+  "semistandard": {
+    "globals": [
+      "angular",
+      "_"
+    ]
+  }
+}
