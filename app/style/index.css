@@ -37,7 +37,6 @@ header h1 {
 
 form {
 	padding: 40px 0;
-	text-align: left;
 }
 
 .main {
@@ -63,21 +62,6 @@ ul li span {
 
 ul li {
   padding:2.5px 0;
-}
-
-.button {
-  border:1px solid #f8f8f2;
-  padding:8px 16px;
-  color:#f8f8f2;
-  text-decoration: none;
-}
-
-.button {
-  border:1px solid #f8f8f2;
-  background: #f8f8f2;
-  padding:8px 16px;
-  color:#2D2D30;
-  text-decoration: none;
 }
 
 fieldset {
@@ -109,13 +93,20 @@ fieldset {
   -webkit-transition: -webkit-transform 0.2s ease-in-out, opacity 0.2s ease-in, height 0 linear 0.2s, padding 0 linear 0.2s, height 0 linear 0.2s;
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in, height 0 linear 0.2s, padding 0 linear 0.2s, height 0 linear 0.2s;
 }
+.button {
+  text-decoration: none;
+}
+
+.button {
+  text-decoration: none;
+}
 
 .md-button {
 	display: inline-block;
   position: relative;
-  padding:6px 15px;
-  line-height: 32px;
+  padding:8px 16px;
   border-radius: 2px;
+  border:0;
   font-size: 1em;
   background-color: #fff;
   color: #646464;
