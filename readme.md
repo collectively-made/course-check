@@ -1,12 +1,12 @@
 # course-check
 
-> My laudable app
+> Electron + AngularJS with Grunt workflow.
 
 
-## Dev
+## Getting Started
 
 ```
-$ npm install
+$ npm install && bower install
 ```
 
 ### Run
@@ -15,15 +15,15 @@ $ npm install
 $ npm start
 ```
 
-### Build
+### Test
 
 ```
-$ npm run build
+$ grunt test
 ```
 
 Builds the app for OS X, Linux, and Windows, using [electron-packager](https://github.com/maxogden/electron-packager).
 
 
-## License
+## Author
 
-MIT © [Hayden Gascoigne](http://collectivelymade.com)
+[Collectively Made](http://collectivelymade.com)
