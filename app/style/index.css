@@ -8,15 +8,24 @@ body {
 	font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+body {
+ padding: 15px;
+ margin: 0px;
+ background-color: #2D2D30;
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ right: 0px;
+ bottom: 0px;
+ color:#f8f8f2;
+ letter-spacing: 0.25px;
+}
+
 header {
-	position: absolute;
-	width: 500px;
-	height: 250px;
-	top: 50%;
-	left: 50%;
-	margin-top: -125px;
-	margin-left: -250px;
+	position: relative;
+	margin-top: 25px;
 	text-align: center;
+	margin-bottom: 40px;
 }
 
 header h1 {
@@ -24,4 +33,113 @@ header h1 {
 	font-weight: 100;
 	margin: 0;
 	padding: 0;
+}
+
+form {
+	padding: 40px 0;
+	text-align: left;
+}
+
+.main {
+	max-width: 750px;
+	margin:0 auto;
+}
+
+ul {
+	max-width: 800px;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  font-family: 'Menlo', Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+ul li span {
+  background-color:#4E4E4E;
+  color:#F9F9E9;
+}
+
+ul li {
+  padding:2.5px 0;
+}
+
+.button {
+  border:1px solid #f8f8f2;
+  padding:8px 16px;
+  color:#f8f8f2;
+  text-decoration: none;
+}
+
+.button {
+  border:1px solid #f8f8f2;
+  background: #f8f8f2;
+  padding:8px 16px;
+  color:#2D2D30;
+  text-decoration: none;
+}
+
+fieldset {
+	border:none;
+	max-width: 300px;
+	margin:0 auto;
+}
+
+.title h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-weight: 100;
+}
+
+.title h4 {
+  margin-top: 0;
+  padding-top: 4px;
+  font-weight: 300;
+}
+
+h1,h2,h3,h4 {
+	font-weight: 100;
+}
+
+#title-bar {
+ -webkit-app-region: drag;
+ height: 32px; 
+ padding: 0px;
+ margin: 0px; 
+ color: #ADADAD;
+ font-family: sans-serif;
+}
+
+#title {
+ position: fixed;
+ top: 0px;
+ left: 12px; 
+ line-height: 32px;
+ font-size: 14px;
+}
+
+#title-bar-btns {
+ -webkit-app-region: no-drag;
+ position: fixed;
+ top: 1px;
+ right: 0px; 
+}
+
+#title-bar-btns button {
+ height: 32px;
+ width: 32px;
+ background-color: transparent;
+ border: none;
+ color: #F1F1F1;
+ font-size: 16px;
+}
+
+#title-bar-btns button:hover {
+ background-color: #3F3F41;
+}
+
+#content {
+ padding: 12px; 
+ color: #CCCCCC;
 }
