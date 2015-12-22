@@ -126,7 +126,7 @@ fieldset {
 .title h1 {
   margin-bottom: 0;
   padding-bottom: 0;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .title h4 {
@@ -136,7 +136,7 @@ fieldset {
 }
 
 h1,h2,h3,h4 {
-	font-weight: 100;
+	font-weight: 300;
 }
 
 #title-bar {
