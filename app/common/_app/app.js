@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc overview
- * @name qisApp
+ * @name courseCheck
  * @description
- * # qisApp
+ * # courseCheck
  *
  * Main module of the application.
  */
