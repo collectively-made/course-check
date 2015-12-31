@@ -1,0 +1,24 @@
+.main-view {
+  padding: 15px;
+}
+
+/* Electron */
+.draggable {
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+}
+
+/* Text */
+.text-center {
+  text-align: center;
+}
+
+/* Drop Box */
+.drop-box {
+  background-color: #CFD8DC;
+  border: 5px dashed #B0BEC5;
+  box-sizing: border-box;
+  height: 1005;
+  padding: 25px;
+  width: 100%;
+}

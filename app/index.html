@@ -1,45 +1,37 @@
 <!DOCTYPE html>
 <html ng-app="courseCheck">
-	<head>
-		<meta charset="utf-8">
-		<title>Course Check</title>
+  <head>
+    <meta charset="utf-8">
+    <title>Course Check</title>
 
-    <!-- build:css(.) styles/vendor.css -->
+    <link rel="stylesheet" href="style.css" />
     <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css" />
     <!-- endbower -->
-    <!-- endbuild -->
-		<link rel="stylesheet" href="style/index.css">
-	</head>
-	<body>
-		<div class="container">
-			<header>
-                <h1>Course Check</h1>
-			</header>
-			<section class="main">    
-            <!-- 
-                scanner or reporter feature goes here.
-                Note: after scan, reporter should open in a new window
-                -->
-            </section>
-            <br>
-			<footer></footer>
-		</div>
-
-    <!-- build:js(.) scripts/vendor.js -->
+  </head>
+  <body>
+    <div layout="column">
+      <div layout="row">
+        <md-toolbar class="draggable">
+          <div class="md-toolbar-tools">
+            <span flex class="text-center">Course Check</span>
+          </div>
+        </md-toolbar>
+      </div>
+      <div class="main-view">
+        <ui-view></ui-view>
+      </div>
+    </div>
     <!-- bower:js -->
     <script src="../bower_components/angular/angular.js"></script>
-    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="../bower_components/angular-mocks/angular-mocks.js"></script>
     <script src="../bower_components/angular-animate/angular-animate.js"></script>
-    <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="../bower_components/angular-touch/angular-touch.js"></script>
-    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../bower_components/angular-aria/angular-aria.js"></script>
+    <script src="../bower_components/angular-messages/angular-messages.js"></script>
+    <script src="../bower_components/angular-material/angular-material.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../bower_components/ng-file-upload/ng-file-upload.js"></script>
     <!-- endbower -->
-    <!-- endbuild -->
 
-    <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="common/_app/app.js"></script>
-    <script src="features/example/example.js"></script>
-    <!-- endbuild -->
-	</body>
+    <script src="app.js"></script>
+  </body>
 </html>
