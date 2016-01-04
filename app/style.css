@@ -1,5 +1,6 @@
-.main-view {
-  padding: 15px;
+body {
+  overflow: hidden;
+  -webkit-overflow-scrolling: auto;
 }
 
 /* Electron */
@@ -13,12 +14,37 @@
   text-align: center;
 }
 
+.text-ellipsis {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+/* Padding */
+.padding {
+  padding: 15px;
+}
+
 /* Drop Box */
 .drop-box {
-  background-color: #CFD8DC;
+  background-color: #ECEFF1;
   border: 5px dashed #B0BEC5;
   box-sizing: border-box;
   height: 1005;
   padding: 25px;
+  text-align: center;
   width: 100%;
+}
+
+.drop-box.drop-box-hovered {
+  background-color: #CFD8DC;
+}
+
+/* Directives */
+scanner, reporter, ui-view {
+  box-sizing: border-box;
+  display: block;
 }

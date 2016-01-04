@@ -10,7 +10,7 @@
     <!-- endbower -->
   </head>
   <body>
-    <div layout="column">
+    <div layout="column" layout-fill ng-cloak>
       <div layout="row">
         <md-toolbar class="draggable">
           <div class="md-toolbar-tools">
@@ -18,9 +18,11 @@
           </div>
         </md-toolbar>
       </div>
-      <div class="main-view">
-        <ui-view></ui-view>
-      </div>
+      <md-content flex class="main-view">
+        <div layout="column">
+          <ui-view flex></ui-view>
+        </div>
+      </md-content>
     </div>
     <!-- bower:js -->
     <script src="../bower_components/angular/angular.js"></script>
